@@ -39,15 +39,13 @@ public class Game {
 	public static ArrayList<Integer> getRange(int number_input,int number,int min,int max){
 		ArrayList<Integer> al = new ArrayList<Integer>();
 		if(number_input > number) {
-			for(int i = min; i <= number_input;i++) {
-				al.add(i);
-			}
+			al.add(min);
+			al.add(number_input);
 			return al;
 		}
 		else {
-			for(int i = number_input;i <= max;i++) {
-				al.add(i);
-			}
+			al.add(number_input);
+			al.add(max);
 			return al;
 		}
 	}
