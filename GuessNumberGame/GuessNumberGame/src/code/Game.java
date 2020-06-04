@@ -26,7 +26,9 @@ public class Game {
 				System.out.println("不在范围内！重新输入");
 				number_input = input.nextInt();
 			}
-		}System.out.println("恭喜你猜对了！！"+"一共用了"+String.valueOf(count)+"次机会！输入的数字不在范围内不计入次数！");
+		}
+		System.out.println("恭喜你猜对了！！"+"一共用了"+count+"次机会！输入的数字不在范围内不计入次数！");
+		System.out.println("答案是："+ number);
 		input.close();
 }
 		
