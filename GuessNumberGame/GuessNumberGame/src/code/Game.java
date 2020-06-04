@@ -19,7 +19,7 @@ public class Game {
 			count ++;
 			ArrayList<Integer> al = getRange(number_input, number,min,max);
 			min = al.get(0);
-			max = al.get(al.size() - 1);
+			max = al.get(1);
 			System.out.println("请继续在" + min + "到" + max +"之间输入");
 			number_input = input.nextInt();
 			while(number_input < min || number_input > max) {
