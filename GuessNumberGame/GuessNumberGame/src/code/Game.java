@@ -20,7 +20,7 @@ public class Game {
 			ArrayList<Integer> al = getRange(number_input, number,min,max);
 			min = al.get(0);
 			max = al.get(al.size() - 1);
-			System.out.println("请继续在" + String.valueOf(min) + "到" + String.valueOf(max) +"之间输入");
+			System.out.println("请继续在" + min + "到" + max +"之间输入");
 			number_input = input.nextInt();
 			while(number_input < min || number_input > max) {
 				System.out.println("不在范围内！重新输入");
@@ -43,13 +43,12 @@ public class Game {
 		if(number_input > number) {
 			al.add(min);
 			al.add(number_input);
-			return al;
 		}
 		else {
 			al.add(number_input);
 			al.add(max);
-			return al;
 		}
+		return al;
 	}
 }
 
